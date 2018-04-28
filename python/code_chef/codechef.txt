@@ -1,0 +1,905 @@
+NOTHING IN COMMON
+Alice has quarreled with Berta recently. Now she doesn't want to have anything in common with her!
+
+Recently, they've received two collections of positive integers. The Alice's integers were A1, A2, ..., AN, while Berta's were
+B1, B2, ..., BM.
+
+Now Alice wants to throw away the minimal amount of number from her collection so that their collections would have no common 
+numbers, i.e. there won't be any number which is present in both collections. Please help Alice to find the minimal amount of 
+numbers she would need to throw away.
+
+Input
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains two space-separated integer numbers N and M denoting the amount of numbers in Alice's
+and Berta's collections respectively.
+
+The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers of Alice.
+
+The third line contains M space-separated integers B1, B2, ..., BM denoting the numbers of Berta.
+
+Output
+
+For each test case, output a single line containing the minimal amount of numbers Alice needs to throw away from her collection 
+so that she wouldn't have any numbers in common with Berta.
+
+Constraints
+
+1 ≤ Ai, Bi ≤ 106
+All numbers are distinct within a single girl's collection.
+Subtasks
+
+Subtask #1 (47 points): T = 25, 1 ≤ N, M ≤ 1000
+Subtask #2 (53 points): T = 5, 1 ≤ N, M ≤ 100000
+Example
+
+Input:
+2
+3 4
+1 2 3
+3 4 5 6
+3 3
+1 2 3
+4 5 6
+
+Output:
+1
+0
+Explanation
+
+Example case 1. If Alice throws away the number 3 from her collection, she would obtain {1, 2} which is disjoint with 
+{3, 4, 5, 6}.
+
+Example case 2. Girls don't have any number in common initially. So there is no need to throw away any number.
+===============================================================DONE==========================================================
+
+
+CATS AND DOGS
+
+Chef is a farmer and a pet lover. He has a lot of his favorite pets cats and dogs in the barn. He does not know their exact 
+count. But he knows that there are C cats and D dogs in the barn. Also, one day went to field and found that there were L legs 
+of the animals touching the ground. Chef knows that cats love to ride on the dogs. So, they might ride on the dogs, and 
+their legs won't touch the ground and Chef would miss counting their legs. Chef's dogs are strong enough to ride at max two 
+cats on their back.
+
+It was a cold foggy morning, when Chef did this counting. So he is now wondering whether he counted the legs properly or not. 
+Specifically, he is wondering is there a some possibility of his counting being correct. Please help Chef in finding it.
+
+Input
+
+First line of the input contains an integer T denoting number of test cases. T test cases follow.
+
+The only line of each test case contains three space separated integers C, D, L denoting number of the cats, number of the 
+dogs and number of legs of animals counted by Chef, respectively.
+
+Output
+
+For each test case, output a single line containing a string "yes" or "no" (both without quotes) according to the situation.
+
+Constraints
+
+1 ≤ T ≤ 105
+0 ≤ C, D, L ≤ 109
+Subtasks
+
+Subtask #1 (20 points)
+
+1 ≤ T ≤ 104
+0 ≤ C, D ≤ 102
+Subtask #2 (30 points)
+
+1 ≤ T ≤ 105
+0 ≤ C, D ≤ 103
+Subtask #3 (50 points)
+
+Original constraints
+Example
+
+Input:
+3
+1 1 8
+1 1 4
+1 1 2
+
+Output:
+yes
+yes
+no
+Explanation
+
+Example 1. There is one cat and one dog. The number of legs of these animals on the ground are 8, it can be possible when 
+both cat and dog are standing on the ground.
+
+Example 2. There is one cat and one dog. The number of legs of these animals on the ground are 4, it can be possible if the 
+cat will ride on the dog, so its legs won't be counted by Chef, only the dog's legs will be counted.
+
+Example 3. There is one cat and one dog. The number of legs of these animals are 2, it can not be true at all, Chef might 
+have made some mistake. Hence answer is "no".
+
+
+CHEF AND THE WAY
+
+After visiting a childhood friend, Chef wants to get back to his home. Friend lives at the first street, and Chef himself 
+lives at the N-th (and the last) street.
+Their city is a bit special: you can move from the X-th street to the Y-th street if and only if 1 <= Y - X <= K, where K 
+is the integer value that is given to 
+you. Chef wants to get to home in such a way that the product of all the visited streets' special numbers is minimal 
+(including the first and the N-th street).
+Please, help him to find such a product.
+
+Input
+
+The first line of input consists of two integer numbers - N and K - the number of streets and the value of K respectively. 
+The second line consist of N numbers
+- A1, A2, ..., AN respectively, where Ai equals to the special number of the i-th street.
+
+Output
+
+Please output the value of the minimal possible product, modulo 1000000007.
+
+Constraints
+
+1 ≤ N ≤ 10^5
+1 ≤ Ai ≤ 10^5
+1 ≤ K ≤ N
+Example
+
+Input:
+4 2
+1 2 3 4.
+
+Output:
+8
+
+Scoring
+
+Subtask 1 (30 points): N <= 80 
+
+Subtask 2 (70 points): See the constraints.
+
+ENTRANCE EXAM
+
+The faculty of application management and consulting services (FAMCS) of the Berland State University (BSU) has always been 
+popular among Berland's enrollees. 
+This year, N students attended the entrance exams, but no more than K will enter the university. In order to decide who are 
+these students, 
+there are series of entrance exams. All the students with score strictly greater than at least (N-K) students' total score 
+gets enrolled.
+
+In total there are E entrance exams, in each of them one can score between 0 and M points, inclusively. The first E-1 exams had already been conducted, 
+and now it's time for the last tribulation.
+
+Sergey is the student who wants very hard to enter the university, so he had collected the information about the first E-1 
+from all N-1 enrollees 
+(i.e., everyone except him). Of course, he knows his own scores as well.
+
+In order to estimate his chances to enter the University after the last exam, Sergey went to a fortune teller. From the visit, 
+he learnt about scores that everyone except him will get at the last exam. Now he wants to calculate the minimum score he needs 
+to score in order to enter 
+to the university. But now he's still very busy with minimizing the amount of change he gets in the shops, so he asks you to 
+help him.
+
+Input
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains four space separated integers N, K, E, M denoting the number of students, 
+the maximal number of students who'll get 
+enrolled, the total number of entrance exams and maximal number of points for a single exam, respectively.
+
+The following N-1 lines will contain E integers each, where the first E-1 integers correspond to the scores of the exams 
+conducted. 
+The last integer corresponds to the score at the last exam, that was predicted by the fortune-teller.
+
+The last line contains E-1 integers denoting Sergey's score for the first E-1 exams.
+
+Output
+
+For each test case, output a single line containing the minimum score Sergey should get in the last exam in order to 
+be enrolled. 
+If Sergey doesn't have a chance to be enrolled, output "Impossible" (without quotes).
+
+Constraints
+
+1 ≤ T ≤ 5
+1 ≤ K < N ≤ 104
+1 ≤ M ≤ 109
+1 ≤ E ≤ 4
+Example
+
+Input:
+1
+4 2 3 10
+7 7 7
+4 6 10
+7 10 9
+9 9
+
+Output:
+4
+Explanation
+
+Example case 1. If Sergey gets 4 points at the last exam, his score will be equal to 9+9+4=22. This will be the second 
+score among all the enrollees - 
+the first one will get 21, the second one will get 20 and the third will have the total of 26. Thus, Sergey will enter 
+the university.
+
+
+
+COLLISIONS
+
+Once N boys and M girls attended a party. You are given a matrix A of N rows and M columns where Aij is 1 if the i-th boy 
+likes the j-th girl, otherwise it will be 0. Note that it is not necessary that if a boy x likes girl y, then girl y should 
+like boy x.
+
+You know that if there are two different boys x and y, who both like girl z, then there will be a collision. 
+Can you calculate the number of different collisions at this party? Note that order of boys in the collision doesn't matter.
+
+Input
+
+The first line contains a single integer T denoting the number of test cases. Then T test cases follow.
+
+The first line of each test case contains two space separated integers N, M denoting the number of boys and girls, 
+respectively.
+
+Each of the following N lines contain M characters, each of them is either '0' or '1'.
+
+Output
+
+For each test case output a single line containing an integer corresponding to the number of collisions at the party.
+
+Constraints
+
+1 ≤ T ≤ 100
+1 ≤ N, M ≤ 10
+Example
+
+Input:
+2
+4 3
+111
+100
+110
+000
+2 2
+10
+01
+
+Output:
+4
+0
+Explanation
+
+Example Case 1. All three boys like the first girl, so there are (1, 2, 1), (1, 3, 1), (2, 3, 1) collisions with her. 
+Boys 1 and 3 both like the second girl so this is one more collision. Only one boy likes the third girl, so there are no 
+collisions with her and thus we have 4 collisions total.
+
+Example Case 2. For each girl there is only one boy who likes her, so there are no collisions at all.
+
+DRUMPF FOR PRESIDENT
+
+
+Donald Drumpf has spent the entire summer lobbying to gather votes for the upcoming student government election. 
+At his University, there are a total of N 
+students. Each student in the university casts a vote. The size of student government is determined by the number of 
+students that get at least K votes.
+
+Each person that receives at least K votes is given a post in the student government. The Dean noticed that every year, 
+there are a few students who vote for 
+themselves. He decided to add a rule to disqualify any such individuals who vote for themselves i.e they cannot be part of 
+the student government.
+
+You are given an array A, where Ai denotes the person who the i-th person voted for. Can you compute the size of the student 
+government?
+
+Input
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+For each test case, first line consists of two space separated integers N, K.
+
+Second line consists of N space separated integers denoting the array A, where i-th integer denotes Ai.
+
+Output
+
+For each test case, output a single line containing an integer corresponding to the size of the student government.
+
+Constraints
+
+1 ≤ T ≤ 100
+1 ≤ K ≤ N
+1 ≤ Ai ≤ N
+Subtasks
+
+Subtask #1: (30 points)
+1 ≤ N ≤ 3
+Subtask #2: (70 points)
+1 ≤ N ≤ 100
+Example
+
+Input:
+2
+3 2
+2 1 2
+2 1
+1 2
+
+Output:
+1
+0
+Explanation
+
+In first test case, there are 3 students. A student must receive at least 2 votes to be part of the student government. 
+Student 1 votes for student 2, 
+student 2 votes for student 1 and student 3 votes for student 2. Thus, Student 2 receives 2 votes and is the only one 
+eligible for student government.
+
+In second test case, although both students receive the required amount of votes, they are both disqualified as they had 
+voted for themselves. 
+Thus, size of the student government is 0.
+
+MAKE XOR ZERO
+
+Olya has written N binary integers (i.e. either zero or one) on a blackboard. She recently learned about XOR operation. 
+Now she wants to erase exactly one
+integer in the array so that the XOR of the remaining N - 1 numbers is zero. Please help her to calculate the number of 
+ways of doing so.
+
+Input
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains a single integer N denoting the number of numbers that Olya has written on a 
+blackboard.
+
+The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers she had written.
+
+Output
+
+For each test case, output a single line containing the number of ways to erase exactly one integer so that the XOR 
+of the remaining integers is zero. The ways where you erase the same integer but on different places in the given sequence 
+are considered different.
+Constraints
+
+1 ≤ T ≤ 20
+2 ≤ N ≤ 105
+0 ≤ Ai ≤ 1
+Example
+
+Input:
+2
+5
+1 0 0 0 0
+5
+1 1 1 1 1
+
+Output:
+1
+5
+Explanation
+
+Example case 1. If you erase the first number on the blackboard, then the XOR of the rest of numbers will be equal to zero.
+
+Example case 2. You can erase any of the given 5 numbers, it will make the XOR of the rest equal to zero.
+
+
+WHO DARES TO BE A MILLIONAIRE
+
+Chef is going to participate in a new quiz show: "Who dares to be a millionaire?"
+
+According to the rules of the game, contestants must answer N questions. The quiz being famous for its difficulty, 
+each question has 26 candidate answers, but only one of which is correct. Answers are denoted by capital Latin letters 
+from A to Z. Chef knows all the questions that can be asked, and for each of them he knows the answer candidate he 
+will choose (some of them can be incorrect). For each question, we'll tell you Chef's answer to it.
+
+The game goes on as follows. FIRST, ALL THE QUESTIONS ARE SHUFFLED RANDOMLY. THEN, A CONTESTANT IS ASKED THESE 
+QUESTIONS ONE-BY-ONE IN THE NEW SHUFFLED ORDER. IF THE CONTESTANT ANSWERS ANY QUESTION INCORRECTLY, THE GAME IS OVER. 
+Total winnings of the contestant are calculated as follows. Let X denote the number of questions answered correctly by 
+the contestant. Depending on this value, the winnings are determined: W0 dollars is the amount won for X = 0, W1 dollars is 
+for X = 1, and so on till X = N. Note that the game was invented by a twisted mind, and so a case where Wi ≥ Wi + 1 for 
+some 0 ≤ i ≤ N − 1 is possible.
+Chef is interested in finding the maximum possible winnings that he can amass.
+
+Input
+
+The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains a single integer N denoting the number of questions.
+
+Next line contains N capital Latin letters denoting the correct answers to these questions.
+
+Next line contains N capital Latin letters denoting answers given by Chef to these questions.
+
+Next line contains N + 1 space-separated integers W0, W1, ..., WN denoting the winnings for 0, 1, ..., N correct answers.
+
+Output
+
+For each test case, output a single line containing the value of maximum possible winnings that Chef can get.
+
+Constraints
+
+1 ≤ T ≤ 500
+1 ≤ N ≤ 1000
+0 ≤ Wi ≤ 109
+Subtasks
+
+Subtask 1: (20 points)
+
+1 ≤ N ≤ 8
+Subtask 2: (80 points)
+
+Original constraints
+Example
+
+Input:
+3
+5
+ABCDE
+EBCDA
+0 10 20 30 40 50
+4
+CHEF
+QUIZ
+4 3 2 1 0
+8
+ABBABAAB
+ABABABAB
+100 100 100 100 100 100 100 100 100
+
+Output:
+30
+4
+100
+
+Explanation
+
+Example case 1. If questions will be placed in order: 2nd (Chef's answer is B, which is correct), 3rd (Chef's answer is C, 
+and it is correct as well), 4th (Chef's answer is D, and he is right), 5th (Chef's answer is A but correct answer is E and 
+the game is over), 1st, Chef will correctly answer 3 questions, and therefore win 30 dollars.
+
+Example case 2. Chef's answers for all questions are incorrect, so his winnings are W0 dollars.
+
+Example case 3. Since all Wi are equal to 100 dollars, Chef will win this sum in any possible case.
+
+
+GREGORIAN CALENDAR
+
+
+According to Gregorian Calendar, it was Monday on the date 01/01/2001. If any year is input, 
+Write a program to display what is the day on the 1st January of this year.
+
+Input
+
+The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer year.
+
+Output
+
+Display the day on the 1st January of that year in lowercase letter.
+
+Constraints
+
+1 ≤ T ≤ 1000
+1900≤ A,B,C ≤2500
+Example
+
+Input
+
+3 
+1994
+1991
+2014
+
+Output
+
+saturday
+tuesday
+wednesday
+
+
+GOOD JOKE
+
+
+Vadim and Roman like discussing challenging problems with each other. One day Vadim told his friend following problem:
+
+Given N points on a plane. Each point p is defined by it's two integer coordinates — px and py. The distance between 
+points a and b is min(|ax - bx|, |ay - by|). You should choose a starting point and make a route visiting every point 
+exactly once, i.e. if we write down numbers of points in order you visit them we should obtain a permutation. Of course, 
+overall distance walked should be as small as possible. The number of points may be up to 40.
+
+"40? Maybe 20? Are you kidding?" – asked Roman. "No, it's not a joke" – replied Vadim. So Roman had nothing to do, 
+but try to solve this problem. Since Roman is really weak in problem solving and you are the only friend, except Vadim, 
+with whom Roman can discuss challenging tasks, he has nobody else to ask for help, but you!
+Input
+
+Input description.
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N denoting the number of points on a plane. The following N lines 
+contain two space-separated integers each — coordinates of points.
+Output
+
+Output description.
+
+Output the answer for every test case in a separate line. The answer for every test case is a permutation of length N. 
+In case there are several solutions that lead to minimal distance walked, you should choose the lexicographically smallest one. 
+Let P denote such permutation. To make output smaller, you should output H(P). H(P) = P1 xor P2 xor ... xor PN. 
+Have a look at the example and it's explanation for better understanding.
+Constraints
+
+1 ≤ T ≤ 10
+1 ≤ N ≤ 40
+0 ≤ absolute value of each coordinate ≤ 1000
+1 ≤ sum over all N in a single test file ≤ 120
+Example
+
+Input:
+2
+2
+1 2
+0 0
+3
+3 3
+0 0
+0 3
+Output:
+3
+0
+Explanation
+
+For the first test case permutation [1, 2] is optimal. 1 xor 2 = 3. 
+For the second one both [2, 3, 1] and [1, 3, 2] lead us to the shortest walk, but the second one is lexicographically smaller. 
+So the answer is H([1, 3, 2]) = 1 xor 3 xor 2 = 0 .
+
+
+
+Team Formation For Snackdown
+
+
+There are n people who want to take part in SnackDown. In the competition in this problem, a team should consist of exactly 
+two people (as opposed to the real contest, where single-member teams are allowed). Of course, a person can only participate 
+in a single team. Out of these, 2 * m people have already formed their teams, i.e. there are m teams already formed. 
+The remaining people want to participate and make teams amongst themselves. Can you please tell whether it is possible 
+to divide them into teams so that all the n people can participate?
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains two space separated integers n, m.
+
+The i-th of the next m lines contains two space separated integers ui, vi denoting that the pair of people ui, 
+and vi have decided to form a team.
+
+Output
+For each test case, output "yes" or "no" (without quotes) corresponding to the answer of the problem.
+
+Constraints
+1 ≤ T ≤ 100
+2 ≤ n ≤ 100
+1 ≤ m ≤ n / 2
+1 ≤ ui, vi ≤ n
+The m already formed teams will be valid.
+Example
+Input
+4
+2 1
+1 2
+4 1
+1 3
+5 2
+1 2
+4 5
+5 1
+1 4
+
+Output
+yes
+yes
+no
+no
+Explanation
+Example 1. Persons 1 and 2 have already formed the team. No other person is left. So, the answer is yes.
+
+Example 2. Persons 1 and 3 have already formed the team. Persons 2 and 4 can form their own team. No other person is left. 
+So, the answer is yes.
+
+Example 3. Persons 1 and 2 have already formed the team. Persons 4 and 5 have also formed their own team. 
+Only person 3 is left. A single person can't form a team. So, the answer is no.
+
+Example 4. Persons 1 and 4 have already formed the team. Persons 2, 3 and 5 cannot all participate, because at 
+least one person will be left out. So, the answer is no.
+
+
+Chef and his daily routine
+
+Chef's daily routine is very simple. He starts his day with cooking food, then he eats the food and finally proceeds for 
+sleeping thus ending his day. Chef carries a robot as his personal assistant whose job is to log the activities of Chef at 
+various instants during the day. Today it recorded activities that Chef was doing at N different instants. These instances 
+are recorded in chronological order (in increasing order of time). This log is provided to you in form of a string s of 
+length N, consisting of characters 'C', 'E' and 'S'. If s[i] = 'C', then it means that at the i-th instant Chef was cooking, 
+'E' denoting he was eating and 'S' means he was sleeping.
+
+You have to tell whether the record log made by the robot could possibly be correct or not.
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The only line of each test case contains string s.
+
+Output
+For each test case, output a single line containing "yes" or "no" (without quotes) accordingly.
+
+Constraints
+1 ≤ T ≤ 20
+1 ≤ N ≤ 105
+Subtasks
+Subtask #1 (40 points) : 1 ≤ N ≤ 100
+Subtask #2 (60 points) : original constraints
+Example
+Input:
+5
+CES
+CS
+CCC
+SC
+ECCC
+
+Output:
+yes
+yes
+yes
+no
+no
+Explanation
+Example case 1. "CES" can correspond to a possible record of activities of Chef. He starts the day with cooking, 
+then eating and then sleeping.
+
+Example case 2. "CS" can also correspond to a possible record of activities of Chef. He starts the day with cooking, 
+then eating and then sleeping. Robot recorded his cooking and sleeping in order. He might not have recorded his eating activity.
+
+Example case 4. "SC" can not correspond to Chef's activities. Here it means that Chef slept first, then he cooked the food, 
+which is impossible for Chef to do on some particular day.
+
+
+Snake Procession
+
+
+The annual snake festival is upon us, and all the snakes of the kingdom have gathered to participate in the procession. 
+Chef has been tasked with reporting on the procession, and for this he decides to first keep track of all the snakes. 
+When he sees a snake first, it'll be its Head, and hence he will mark a 'H'. The snakes are long, and when he sees the 
+snake finally slither away, he'll mark a 'T' to denote its tail. In the time in between, when the snake is moving past him, 
+or the time between one snake and the next snake, he marks with '.'s.
+
+Because the snakes come in a procession, and one by one, a valid report would be something like "..H..T...HTH....T.", 
+or "...", or "HT", whereas "T...H..H.T", "H..T..H", "H..H..T..T" would be invalid reports (See explanations at the bottom).
+
+Formally, a snake is represented by a 'H' followed by some (possibly zero) '.'s, and then a 'T'. A valid report is one 
+such that it begins with a (possibly zero length) string of '.'s, and then some (possibly zero) snakes between which 
+there can be some '.'s, and then finally ends with some (possibly zero) '.'s.
+
+Chef had binged on the festival food and had been very drowsy. So his report might be invalid. You need to help him find 
+out if his report is valid or not.
+
+Input
+The first line contains a single integer, R, which denotes the number of reports to be checked. The description of 
+each report follows after this.
+The first line of each report contains a single integer, L, the length of that report.
+The second line of each report contains a string of length L. The string contains only the characters '.', 'H', and 'T'.
+Output
+For each report, output the string "Valid" or "Invalid" in a new line, depending on whether it was a valid report or not.
+Constraints
+1 ≤ R ≤ 500
+1 ≤ length of each report ≤ 500
+Example
+Input:
+6
+18
+..H..T...HTH....T.
+3
+...
+10
+H..H..T..T
+2
+HT
+11
+.T...H..H.T
+7
+H..T..H
+
+Output:
+Valid
+Valid
+Invalid
+Valid
+Invalid
+Invalid
+Explanation
+"H..H..T..T" is invalid because the second snake starts before the first snake ends, which is not allowed.
+
+".T...H..H.T" is invalid because it has a 'T' before a 'H'. A tail can come only after its head.
+
+"H..T..H" is invalid because the last 'H' does not have a corresponding 'T'.
+
+
+La Liga 
+
+
+Today is the final round of La Liga, the most popular professional football league in the world. Real Madrid is playing 
+against Malaga and Barcelona is 
+playing against Eibar. These two matches will decide who wins the league title. Real Madrid is already 3 points ahead of 
+Barcelona in the league standings. 
+In fact, Real Madrid will win the league title, except for one scenario: If Real Madrid loses against Malaga, and 
+Barcelona wins against Eibar, then the 
+La Liga title will go to Barcelona. In any other combination of results, Real Madrid will win the title.
+
+You will be given multiple scenarios for these two games, where in each one you will be given the number of goals each 
+team scored in their respective match. 
+A team wins a match if it scores more than the opponent. In case they score the same number of goals, it's a draw. 
+Otherwise, the team loses the game. 
+You are asked to tell the winner of the La Liga title in each scenario.
+
+Input
+The first line contains a single number T, the number of scenarios. Each scenario is described by four lines. Each line 
+starts with a team name followed by 
+the number of goals this team scored in its corresponding match. (Barcelona plays Eibar and Real Madrid plays Malaga). 
+The names are given in any arbitrary 
+order within a scenario.
+
+Output
+For each scenario, output a single line showing the title winner in case this scenario happens. It should be 
+either "RealMadrid" or "Barcelona".
+
+Constraints
+1 ≤ T ≤ 500
+0 ≤ number of goals scored by a team in a match ≤ 20
+Example
+Input:
+2
+Barcelona 2
+Malaga 1
+RealMadrid 1
+Eibar 0
+Malaga 3
+RealMadrid 2
+Barcelona 8
+Eibar 6
+
+Output:
+RealMadrid
+Barcelona
+Explanations
+In the first scenario, Barcelona wins against Eibar, because they scored more goals (2 > 0). But Real Madrid draws 
+against Malaga, because they both score 1 goal each. So, Real Madrid wins the league title.
+
+In the second scenario, Barcelona wins against Eibar (8 > 6). And Real Madrid loses against Malaga (2 < 3). 
+This satisfies the only criteria needed for Barcelona to win the title: Barcelona winning, and Real Madrid losing. 
+Hence, Barcelona is the answer for this scenario.
+
+
+
+Bear and Candies 123
+
+
+Bears love candies and games involving eating them. Limak and Bob play the following game. Limak eats 1 candy, 
+then Bob eats 2 candies, then Limak eats 3 candies, then Bob eats 4 candies, and so on. Once someone can't eat what he is 
+supposed to eat, he loses.
+
+Limak can eat at most A candies in total (otherwise he would become sick), while Bob can eat at most B candies in total. 
+Who will win the game? Print "Limak" or "Bob" accordingly.
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The only line of each test case contains two integers A and B denoting the maximum possible number of candies Limak 
+can eat and the maximum possible number of candies Bob can eat respectively.
+
+Output
+For each test case, output a single line containing one string — the name of the winner ("Limak" or "Bob" without the quotes).
+
+Constraints
+1 ≤ T ≤ 1000
+1 ≤ A, B ≤ 1000
+Example
+Input:
+10
+3 2
+4 2
+1 1
+1 2
+1 3
+9 3
+9 11
+9 12
+9 1000
+8 11
+
+Output:
+Bob
+Limak
+Limak
+Bob
+Bob
+Limak
+Limak
+Bob
+Bob
+Bob
+Explanation
+Test case 1. We have A = 3 and B = 2. Limak eats 1 candy first, and then Bob eats 2 candies. Then Limak is supposed to 
+eat 3 candies but that would mean 1 + 3 = 4 candies in total. It's impossible because he can eat at most A candies, 
+so he loses. Bob wins, and so we print "Bob".
+
+Test case 2. Now we have A = 4 and B = 2. Limak eats 1 candy first, and then Bob eats 2 candies, 
+then Limak eats 3 candies (he has 1 + 3 = 4 candies in total, which is allowed because it doesn't exceed A). 
+Now Bob should eat 4 candies but he can't eat even a single one (he already ate 2 candies). Bob loses and Limak is the winner.
+
+Test case 8. We have A = 9 and B = 12. The game looks as follows:
+
+Limak eats 1 candy.
+Bob eats 2 candies.
+Limak eats 3 candies (4 in total).
+Bob eats 4 candies (6 in total).
+Limak eats 5 candies (9 in total).
+Bob eats 6 candies (12 in total).
+Limak is supposed to eat 7 candies but he can't — that would exceed A. Bob wins.
+
+
+
+Similar Dishes
+
+
+Chef has just found a recipe book, where every dish consists of exactly four ingredients. He is going to choose some 
+two dishes and prepare them for dinner. Of course, he likes diversity and wants to know whether the two dishes are similar.
+
+Two dishes are called similar if at least half of their ingredients are the same. In other words, at least two of four 
+ingredients of the first dish should also be present in the second dish. The order of ingredients doesn't matter.
+
+Your task is to examine T pairs of dishes. For each pair, check if the two dishes are similar and print "similar" or 
+"dissimilar" accordingly.
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains four distinct strings, denoting ingredients needed for the first dish. 
+Each ingredient is represented by a string of length between 2 and 10 inclusive, consisting of lowercase English letters.
+
+The second line of each test case describes the second dish in the same format.
+
+Output
+For each test case, output a single line containing the answer — "similar" if at least half of the ingredients are same, 
+and "dissimilar" otherwise (without the quotes).
+
+Constraints
+1 ≤ T ≤ 200
+The length of each string will be between 2 and 10 inclusive.
+Example
+Input:
+5
+eggs sugar flour salt
+sugar eggs milk flour
+aa ab ac ad
+ac ad ae af
+cookies sugar grass lemon
+lemon meat chili wood
+one two three four
+one two three four
+gibberish jibberish lalalalala popopopopo
+jibberisz gibberisz popopopopu lalalalalu
+
+Output:
+similar
+similar
+dissimilar
+similar
+dissimilar
+Explanation
+Test case 1. The first dish consists of ingredients: eggs, sugar, flour, salt, while the second dish consists of: 
+sugar, eggs, milk, flour. Three of four ingredients are present in both dishes (eggs, sugar, flour) so the two dishes 
+are similar.
+
+Test case 2. This example shows that strings in the input don't necessarily represent real food. The answer is 
+again "similar", because two ingredients are present in both dishes ("ac" and "ad").
+
+Test case 3. The only common ingredient is lemon, so the answer is "dissimilar". Remember that at least two 
+
+ingredients should be present in both dishes.
