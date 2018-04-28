@@ -1,0 +1,13 @@
+FDDI (Fiber Distributed Data Interface)
+RPR (Resilient Packet Ring)
+hidden terminal problem
+exposed terminal problem
+MACA (Multiple Access with Collision Avoidance)
+RTS (Request To Send)
+OUI (Organizationally Unique Identifier)
+08099317368
+OUI (Organizationally Unique Identifier)
+LLC (Logical Link Control)
+binary exponential backoff
+
+  

@@ -1,0 +1,7 @@
+sockets...
+what is the difference between connection-oriented and connectionless-oriented service?
+  Ans:
+    connection-oriented service like TCP requires a connection to be established b4 any
+    communication can occur...this applies to the sockets...
+    connectionless-oriented service like UDP doesn't establish any connection b4 communication
+    begins..
