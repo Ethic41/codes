@@ -1,0 +1,13 @@
+16th, july 2017.
+
+What:
+  -this script preetifies html documents as in the bs4's "BeautifulSoup.preetify"
+Aim:
+  -Collect any file path and parse it to the "BeautifulSoup.preetify"
+  -make it a global script
+Objectives:
+  -request for a directory
+  -change to the dat directory as the "cwd"
+  -list the files in numbered form
+  -and accept a specific file number as input or many file no.
+  -preetify them and save them to a "preety" folder
