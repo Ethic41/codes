@@ -1,0 +1,942 @@
+# Nmap 7.60 scan initiated Mon Dec 18 02:28:01 2017 as: nmap -A -oA scan/scan2 196.220.0-255.1-254
+Nmap scan report for 196.220.16.17
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.18
+Host is up (0.10s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     VMware ESXi Server httpd
+|_http-title: Did not follow redirect to https://196.220.16.18/
+443/tcp open  ssl/http VMware ESXi 4.1 Server httpd
+|_http-title: " + ID_EESX_Welcome + "
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:localhost.localdomain
+| Not valid before: 2012-01-16T10:38:47
+|_Not valid after:  2023-07-17T10:38:47
+|_ssl-date: 2017-12-18T02:18:55+00:00; 0s from scanner time.
+| vmware-version: 
+|   Server version: VMware ESXi 5.0.0
+|   Build: 469512
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+Service Info: Host: lgdc01blade04esxi.netcomng.com; CPE: cpe:/o:vmware:esxi, cpe:/o:vmware:esxi:4.1
+
+Nmap scan report for 196.220.16.22
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.23
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Did not follow redirect to http://lg.netcomafrica.com/lg/lg.cgi
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.27
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.33
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.35
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       GoAhead WebServer (Peppercon/Paradox alarm system http config)
+| http-title: Authentication
+|_Requested resource was http://196.220.16.35/auth.asp
+443/tcp  open   ssl/http   GoAhead WebServer
+| http-title: Authentication
+|_Requested resource was https://196.220.16.35/auth.asp
+| ssl-cert: Subject: commonName=rc1/organizationName=Peppercon AG/stateOrProvinceName=Saxony/countryName=DE
+| Not valid before: 2003-05-08T16:30:05
+|_Not valid after:  2008-05-06T16:30:05
+|_ssl-date: 1970-01-04T14:51:29+00:00; -47y347d11h27m41s from scanner time.
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: Device: remote management
+
+Host script results:
+|_clock-skew: mean: -17514d11h27m41s, deviation: 0s, median: -17514d11h27m41s
+
+Nmap scan report for 196.220.16.36
+Host is up (0.10s latency).
+Not shown: 994 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.37
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http?
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.38
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.52
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   tcpwrapped
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.54
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Cisco IOS http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=level_15 or view_access
+|_http-server-header: cisco-IOS
+|_http-title: Site doesn't have a title.
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Nmap scan report for 196.220.16.65
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.89
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   open   tcpwrapped
+80/tcp   open   tcpwrapped
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for mail.resourcery.com (196.220.16.90)
+Host is up (0.11s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Cisco IOS http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=level_15_access
+|_http-server-header: cisco-IOS
+443/tcp  open   ssl/https?
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Nmap scan report for 196.220.16.91
+Host is up (0.11s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd
+|_http-title: The page cannot be displayed
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 196.220.16.92
+Host is up (0.11s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp  open   ssl/http   Microsoft IIS httpd 7.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+| ssl-cert: Subject: commonName=sip.resourcery.com
+| Subject Alternative Name: DNS:sip.resourcery.com, DNS:www.sip.resourcery.com, DNS:apps.resourcery.com, DNS:connect.resourcery.com, DNS:resourcery.com, DNS:autodiscover.resourcery.com, DNS:lagmail03.resourcery.com, DNS:lagcas01.resourcery.com, DNS:dialin.resourcery.com, DNS:mail.resourcery.com
+| Not valid before: 2017-11-28T15:23:00
+|_Not valid after:  2018-12-12T09:12:06
+|_ssl-date: 2017-12-18T02:18:33+00:00; 0s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 196.220.16.93
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Apache httpd
+|_http-server-header: Apache
+|_http-title: Did not follow redirect to https://196.220.16.93/
+443/tcp  open   ssl/http   Apache httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was login
+| ssl-cert: Subject: commonName=resourceryvcsc.resourcery.com/organizationName=RSY/stateOrProvinceName=Lagos/countryName=NG
+| Not valid before: 2013-04-13T16:47:36
+|_Not valid after:  2015-04-13T16:47:36
+|_ssl-date: 2017-12-18T02:17:45+00:00; -38s from scanner time.
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Host script results:
+|_clock-skew: mean: -38s, deviation: 0s, median: -38s
+
+Nmap scan report for mail.resourcery.com (196.220.16.94)
+Host is up (0.10s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd
+|_http-title: The page cannot be displayed
+443/tcp open  ssl/http Microsoft IIS httpd
+|_http-title: The page cannot be displayed
+| ssl-cert: Subject: commonName=sip.resourcery.com
+| Subject Alternative Name: DNS:sip.resourcery.com, DNS:www.sip.resourcery.com, DNS:apps.resourcery.com, DNS:connect.resourcery.com, DNS:resourcery.com, DNS:autodiscover.resourcery.com, DNS:lagmail03.resourcery.com, DNS:lagcas01.resourcery.com, DNS:dialin.resourcery.com, DNS:mail.resourcery.com
+| Not valid before: 2017-11-28T15:23:00
+|_Not valid after:  2018-12-12T09:12:06
+|_ssl-date: 2017-12-18T02:18:34+00:00; -38s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -38s, deviation: 0s, median: -38s
+
+Nmap scan report for 196.220.28.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for wbld-cr1-vl-7.wa.co.za (196.220.32.1)
+Host is up (0.15s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for wbld-cr1-vl-7.wa.co.za (196.220.32.2)
+Host is up (0.15s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for wbld-cr1-vl-7.wa.co.za (196.220.32.3)
+Host is up (0.15s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for wastorage.corp.webafrica.com (196.220.32.32)
+Host is up (0.15s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE VERSION
+80/tcp  open  http    Microsoft IIS httpd 8.5
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|   Digest nonce=+Upgraded+v12df539a21080b42a5ab37a9150f894fa768cad7ca677d301f3878695f91300654396b99f4661e74fb9b27f992c2b87334770eb7bbff9d01f qop=auth charset=utf-8 algorithm=MD5-sess realm=Digest
+|   Negotiate
+|_  NTLM
+| http-ntlm-info: 
+|   Target_Name: CORP
+|   NetBIOS_Domain_Name: CORP
+|   NetBIOS_Computer_Name: WASTORAGE
+|   DNS_Domain_Name: corp.webafrica.com
+|   DNS_Computer_Name: WASTORAGE.corp.webafrica.com
+|   DNS_Tree_Name: corp.webafrica.com
+|_  Product_Version: 6.3.9600
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: Site doesn't have a title.
+443/tcp open  https?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 196.220.240.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.240.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.240.5
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   open   ftp        vsftpd 3.0.2
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: TIMEOUT
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 35.195.135.195
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+80/tcp   open   http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: Unix
+
+Nmap scan report for 196.220.240.9
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Cisco IOS http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=level_15 or view_access
+|_http-title: Site doesn't have a title.
+443/tcp  open   ssl/https?
+|_ssl-date: 2017-12-18T02:58:41+00:00; +40m12s from scanner time.
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Host script results:
+|_clock-skew: mean: 40m11s, deviation: 0s, median: 40m11s
+
+Nmap scan report for 196.220.240.12
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.240.18
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+8080/tcp open   tcpwrapped
+9418/tcp closed git
+
+Nmap scan report for 196.220.241.161
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.241.254
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  open   ssl/https?
+|_ssl-date: TLS randomness does not represent time
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp open   http       Apache httpd 2.4.10 ((Win32) OpenSSL/1.0.1j mod_kscwc/2.4)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.10 (Win32) OpenSSL/1.0.1j mod_kscwc/2.4
+|_http-title: Kaspersky Portal
+9418/tcp closed git
+
+Nmap scan report for 196.220.242.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.242.6
+Host is up (0.10s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.242.20
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.244.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.244.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.246.1
+Host is up (0.10s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.246.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.247.1
+Host is up (0.10s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.247.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.247.5
+Host is up (0.14s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http?
+443/tcp  open   https?
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.248.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.248.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.248.6
+Host is up (0.10s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    EnGenius ESR600 router http admin (WAN IP: 196.220.248.6)
+|_http-title: Site doesn't have a title (text/html).
+Service Info: CPE: cpe:/h:engenius:esr600
+
+Nmap scan report for 196.220.249.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.249.2
+Host is up (0.10s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.250.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.250.2
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.251.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.251.2
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.252.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.252.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.253.1
+Host is up (0.10s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.253.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.253.3
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.254.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.254.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.254.129
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.254.130
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.255.1
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.255.2
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.255.129
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.255.130
+Host is up (0.10s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Post-scan script results:
+| clock-skew: 
+|   -38s: 
+|     196.220.16.94 (mail.resourcery.com)
+|     196.220.16.93
+|   0s: 
+|     196.220.16.18
+|     196.220.32.32 (wastorage.corp.webafrica.com)
+|_    196.220.16.92
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 18 03:25:55 2017 -- 65024 IP addresses (64 hosts up) scanned in 3474.20 seconds

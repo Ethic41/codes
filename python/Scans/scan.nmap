@@ -1,0 +1,379 @@
+# Nmap 7.60 scan initiated Sun Dec 17 21:48:37 2017 as: nmap -A --max-retries 3 -oA scan 196.220.0.0/16
+Got nsock CONNECT response with status TIMEOUT - aborting this service
+Got nsock CONNECT response with status TIMEOUT - aborting this service
+Got nsock CONNECT response with status ERROR - aborting this service
+Got nsock CONNECT response with status ERROR - aborting this service
+Nmap scan report for 196.220.16.17
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.18
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     VMware ESXi Server httpd
+|_http-title: Did not follow redirect to https://196.220.16.18/
+443/tcp open  ssl/http VMware ESXi 4.1 Server httpd
+| http-cisco-anyconnect: 
+|_  ERROR: Not a Cisco ASA or unsupported version
+|_http-title: " + ID_EESX_Welcome + "
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:localhost.localdomain
+| Not valid before: 2012-01-16T10:38:47
+|_Not valid after:  2023-07-17T10:38:47
+|_ssl-date: 2017-12-17T21:53:55+00:00; 0s from scanner time.
+| vmware-version: 
+|   Server version: VMware ESXi 5.0.0
+|   Build: 469512
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+Service Info: Host: lgdc01blade04esxi.netcomng.com; CPE: cpe:/o:vmware:esxi, cpe:/o:vmware:esxi:4.1
+
+Nmap scan report for 196.220.16.22
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.23
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Did not follow redirect to http://lg.netcomafrica.com/lg/lg.cgi
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.27
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.33
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.35
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       GoAhead WebServer (Peppercon/Paradox alarm system http config)
+| http-title: Authentication
+|_Requested resource was http://196.220.16.35/auth.asp
+443/tcp  open   ssl/http   GoAhead WebServer (Supermicro IPMI/Paradox Alarm http config)
+| http-cisco-anyconnect: 
+|_  ERROR: Not a Cisco ASA or unsupported version
+| http-title: Authentication
+|_Requested resource was https://196.220.16.35/auth.asp
+| ssl-cert: Subject: commonName=rc1/organizationName=Peppercon AG/stateOrProvinceName=Saxony/countryName=DE
+| Not valid before: 2003-05-08T16:30:05
+|_Not valid after:  2008-05-06T16:30:05
+|_ssl-date: 1970-01-04T10:26:26+00:00; -47y347d11h27m40s from scanner time.
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: Device: remote management
+
+Host script results:
+|_clock-skew: mean: -17514d11h27m40s, deviation: 0s, median: -17514d11h27m40s
+
+Nmap scan report for 196.220.16.36
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   tcpwrapped
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.37
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3958s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http?
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.38
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http?
+443/tcp  open   https?
+| http-cisco-anyconnect: 
+|_  ERROR: Failed to connect to SSL VPN server
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.52
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   tcpwrapped
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.54
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   open   http       Cisco IOS http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=level_15 or view_access
+|_http-server-header: cisco-IOS
+|_http-title: Site doesn't have a title.
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Nmap scan report for 196.220.16.65
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for 196.220.16.89
+Host is up (0.11s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   open   tcpwrapped
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+22/tcp   open   tcpwrapped
+80/tcp   open   tcpwrapped
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Nmap scan report for mail.resourcery.com (196.220.16.90)
+Host is up (0.11s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+80/tcp   open   http       Cisco IOS http config
+|_http-server-header: cisco-IOS
+|_http-title: Site doesn't have a title.
+443/tcp  open   ssl/https?
+| http-cisco-anyconnect: 
+|_  ERROR: Failed to connect to SSL VPN server
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Nmap scan report for 196.220.16.91
+Host is up (0.11s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd
+|_http-title: The page cannot be displayed
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 196.220.16.92
+Host is up (0.11s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   closed ssh
+80/tcp   open   http       Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp  open   ssl/http   Microsoft IIS httpd 7.5
+| http-cisco-anyconnect: 
+|_  ERROR: Not a Cisco ASA or unsupported version
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+| ssl-cert: Subject: commonName=sip.resourcery.com
+| Subject Alternative Name: DNS:sip.resourcery.com, DNS:www.sip.resourcery.com, DNS:apps.resourcery.com, DNS:connect.resourcery.com, DNS:resourcery.com, DNS:autodiscover.resourcery.com, DNS:lagmail03.resourcery.com, DNS:lagcas01.resourcery.com, DNS:dialin.resourcery.com, DNS:mail.resourcery.com
+| Not valid before: 2017-11-28T15:23:00
+|_Not valid after:  2018-12-12T09:12:06
+|_ssl-date: 2017-12-17T21:54:04+00:00; 0s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 196.220.16.93
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   open   ssh        OpenSSH 5.9 (protocol 2.0)
+| ssh-hostkey: 
+|_  1024 67:16:0c:93:20:66:bf:be:a2:c9:9f:53:d2:81:bd:a2 (DSA)
+80/tcp   open   http       Apache httpd
+|_http-server-header: Apache
+|_http-title: Did not follow redirect to https://196.220.16.93/
+443/tcp  open   ssl/http   Apache httpd
+| http-cisco-anyconnect: 
+|_  ERROR: Not a Cisco ASA or unsupported version
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was login
+| ssl-cert: Subject: commonName=resourceryvcsc.resourcery.com/organizationName=RSY/stateOrProvinceName=Lagos/countryName=NG
+| Not valid before: 2013-04-13T16:47:36
+|_Not valid after:  2015-04-13T16:47:36
+|_ssl-date: 2017-12-17T21:53:02+00:00; -38s from scanner time.
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+
+Host script results:
+|_clock-skew: mean: -38s, deviation: 0s, median: -38s
+
+Nmap scan report for mail.resourcery.com (196.220.16.94)
+Host is up (0.11s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd
+|_http-title: The page cannot be displayed
+443/tcp open  ssl/http Microsoft IIS httpd
+| http-cisco-anyconnect: 
+|_  ERROR: Failed to connect to SSL VPN server
+|_http-title: The page cannot be displayed
+| ssl-cert: Subject: commonName=sip.resourcery.com
+| Subject Alternative Name: DNS:sip.resourcery.com, DNS:www.sip.resourcery.com, DNS:apps.resourcery.com, DNS:connect.resourcery.com, DNS:resourcery.com, DNS:autodiscover.resourcery.com, DNS:lagmail03.resourcery.com, DNS:lagcas01.resourcery.com, DNS:dialin.resourcery.com, DNS:mail.resourcery.com
+| Not valid before: 2017-11-28T15:23:00
+|_Not valid after:  2018-12-12T09:12:06
+|_ssl-date: 2017-12-17T21:52:58+00:00; -39s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -39s, deviation: 0s, median: -39s
+
+Nmap scan report for 196.220.28.1
+Host is up (0.10s latency).
+Scanned at 2017-12-17 21:49:36 CET for 3957s
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE    VERSION
+20/tcp   closed ftp-data
+21/tcp   closed ftp
+22/tcp   open   ssh        MikroTik RouterOS sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  1024 ee:60:87:31:f1:05:89:ed:9e:41:3c:9e:ef:96:dd:18 (DSA)
+80/tcp   closed http
+443/tcp  closed https
+3306/tcp closed mysql
+5432/tcp closed postgresql
+8080/tcp closed http-proxy
+9418/tcp closed git
+Service Info: OS: Linux; Device: router; CPE: cpe:/o:mikrotik:routeros
+
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     196.220.16.18
+|_    196.220.16.92
+Read from /usr/bin/../share/nmap: nmap-payloads nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 17 22:55:34 2017 -- 65536 IP addresses (20 hosts up) scanned in 4017.05 seconds

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learning JavaScrpt</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="heading">Learning Javascript</h1>
+      <p>with Brad Traversy</p>
+    </div>
+    <div class="container">
+      <h1 id="time"></h1>
+      <button id="button" on="showDate()">Show Date</button>
+    </div>
+    <script>
+      function showDate(){
+        var time = document.getElementById('time');
+        if(time.innerHTML == ""){
+          time.innerHTML = Date();
+          button.innerHTML = "Hide Date";
+        }else {
+          time.innerHTML = "";
+          button.innerHTML = "Show Date";
+        }
+
+      }
+    </script>
+  </body>
+</html>
