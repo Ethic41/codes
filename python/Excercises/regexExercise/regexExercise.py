@@ -8,7 +8,8 @@ import re
 
 def main():
     #exercise1()
-    exercise2()
+    #exercise2()
+    exercise3()
 
 
 def exercise1():
@@ -35,7 +36,16 @@ def exercise2():
             print("invalid userName")
 
 
-
+def exercise3():
+    while(True):
+        userName = re.compile("[A-Z][a-z]{1,}\s{1,1}[A-Z]{1,1}$")
+        name = raw_input("Enter userName:\n")
+        if userName.match(name):
+            print("%s is a valid userName"%(name))
+        elif name == "exit":
+            break
+        else:
+            print("invalid userName")
 
 
 
