@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
+#include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include "hacking.h"
 
 
 void usage(char *prog_name, char *filename){
@@ -11,67 +12,50 @@ void usage(char *prog_name, char *filename){
   exit(0);
 }
 
-void fatal(char *); //a function for fatal errors
-void *ec_malloc(unsigned int); // an error checked malloc() wrapper
-
 int main(int argc, char *argv[]){
-  int fd; //file descriptor
+  int userid, fd; //File descriptor
   char *buffer, *datafile;
 
   buffer = (char *) ec_malloc(100);
   datafile = (char *) ec_malloc(20);
-  strcpy(datafile, "/tmp/notes");
+  strcpy(datafile, "/var/notes");
 
   if(argc < 2){
     usage(argv[0], datafile);
   }
 
-  strcpy(buffer, argv[1]); //copy into buffer
+  strcpy(buffer, argv[1]); //Copy into buffer
 
   printf("[DEBUG] buffer @ %p: \'%s\'\n", buffer, buffer);
   printf("[DEBUG] datafile @ %p: \'%s\'\n", datafile, datafile);
 
-  strncat(buffer, "\n", 1); //add a newline on the end.
-
-  //Opening file
+  //Opening the file
   fd = open(datafile, O_WRONLY|O_CREAT|O_APPEND, S_IRUSR|S_IWUSR);
   if(fd == -1){
-    fatal("In main() while opening file");
+    fatal("in main() while opening file");
   }
   printf("[DEBUG] file descriptor is %d\n", fd);
 
-  //Writing datafile
+  userid = getuid(); //get the real userid
+
+  //Writing data
+  if(write(fd, &userid, 4) == -1){
+    fatal("In main() while writing userid to file");
+  }
+  write(fd, "\n", 1); //Terminate line
+
   if(write(fd, buffer, strlen(buffer)) == -1){
     fatal("in main() while writing buffer to file");
   }
+  write(fd, "\n", 1); //Terminating line
 
   //Closing file
   if(close(fd) == -1){
-    fatal("in main() while closing file");
+    fatal("In main() while closing file");
   }
 
   printf("Note has been saved.\n");
   free(buffer);
   free(datafile);
-}
-
-//A function to display an error message and then exit
-void fatal(char *message){
-  char error_message[100];
-
-  strcpy(error_message, "[!!] Fatal Error ");
-  strncat(error_message, message, 83);
-  perror(error_message);
-  exit(-1);
-}
-
-//An error-checked malloc() wrapper function
-void *ec_malloc(unsigned int size){
-  void *ptr;
-  ptr = malloc(size);
-  if(ptr == NULL){
-    fatal("in ec_malloc() on memory allocation");
-  }
-  return ptr;
 }
 //end of code
