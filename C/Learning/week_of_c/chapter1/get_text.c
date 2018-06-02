@@ -6,6 +6,6 @@ main(){
   c = getchar();
   while(c != EOF){
     putchar(c);
-    getchar();
+    c = getchar();
   }
 }
