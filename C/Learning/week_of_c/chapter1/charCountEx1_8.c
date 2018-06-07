@@ -4,7 +4,7 @@ int main(){
   int blanks, tabs, nl, c;
   blanks = tabs = nl = 0;
 
-  while((c = getchar()) != EOF){
+  while((c = getchar()) != ' '){
     if(c == '\n'){
       ++nl;
     }
