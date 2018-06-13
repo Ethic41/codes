@@ -1,18 +1,20 @@
 #include <stdio.h>
+#include <makeWordHistogram.h>
 
+int makeWordHistogram(int);
 
 int main(){
   int c, count, starting, lastChar;
 
   count = 0;
   starting = 1;
-  while((c = getchar()) != '\t'){
+  while((c = getchar()) != EOF){
     if(c == ' ' || c == '\t' || c == '\n'){
       if(starting == 1){
         ;
       }
       else if(lastChar != ' ' && lastChar != '\t' && lastChar != '\n'){
-        makeHistogram(count);
+        makeWordHistogram(count);
         count = 0;
         lastChar = c;
       }
@@ -23,30 +25,6 @@ int main(){
       lastChar = c;
     }
   }
-}
-
-int makeHistogram(int length){
-  int i;
-
-  for(i=0; i < length; i++){
-    printf("====");
-  }
-  printf("\n%d", length);
-  //printf("\n%d", length);
-  for(i=0; i < length; i++){
-    printf("    ");
-  }
-  if(length < 10){
-    printf("\b\b|\n");
-  }
-  else{
-    printf("\b\b\b|\n");
-  }
-  for(i=0; i < length; i++){
-    printf("====");
-  }
-  printf("\n");
-
 }
 
 //end of code
