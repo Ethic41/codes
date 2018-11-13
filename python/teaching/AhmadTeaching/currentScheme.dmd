@@ -1,0 +1,17 @@
+#Loops and everyting
+#functions
+#dictionary
+#file handling
+#exceptions
+#classes
+#Libraries
+    =>os
+    =>Request
+    =>urlLib
+    =>BeautifulSoup
+        *Build a web application password cracker
+    =>Regular Expressions
+
+===[ when done with programming ]===
+#war-games
+    =>bandit
