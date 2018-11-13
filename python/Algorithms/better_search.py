@@ -1,4 +1,4 @@
-a = raw_input()
+a = raw_input() # expects string
 a = list(a)
 x = raw_input()
 
